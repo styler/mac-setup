@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:mime:20170907':
+    - gitbook > send > mime:
+        patched: '2021-08-29T21:57:27.991Z'
+  'npm:qs:20140806-1':
+    - gitbook > tiny-lr-fork > qs:
+        patched: '2021-08-29T21:57:27.991Z'
+  'npm:uglify-js:20151024':
+    - gitbook > swig > uglify-js:
+        patched: '2021-08-29T21:57:27.991Z'
