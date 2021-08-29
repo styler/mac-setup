@@ -1,57 +1,61 @@
 {
-    "name": "mac-setup",
-    "version": "0.0.3",
-    "homepage": "https://www.sourabhbajaj.com/",
-    "description": "Installing Development environment on Mac OS X",
-    "main": "Gruntfile.js",
-    "dependencies": {
-        "grunt": "~0.4.2",
-        "grunt-contrib-clean": "~0.5.0",
-        "grunt-gh-pages": "0.9.1",
-        "grunt-cli": "0.1.11",
-        "gitbook": "0.6.0",
-        "grunt-http-server": "0.0.5",
-        "gitbook-plugin": "0.0.2",
-        "gitbook-plugin-autocover": "1.0.1"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.2",
-        "grunt-contrib-clean": "~0.5.0",
-        "grunt-gh-pages": "0.9.1",
-        "grunt-cli": "0.1.11",
-        "gitbook": "0.6.0",
-        "grunt-http-server": "0.0.5",
-        "gitbook-plugin": "0.0.2",
-        "gitbook-plugin-autocover": "1.0.1"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "bin": {
-        "gitbook": "./bin/gitbook.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sb2nov/mac-setup.git"
-    },
-    "keywords": [
-        "OSx",
-        "Install",
-        "Mac",
-        "Git",
-        "Gitbook",
-        "Setup",
-        "Instruction"
-    ],
-    "author": "Sourabh Bajaj",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/sb2nov/mac-setup/issues"
-    },
-    "contributors": [
-      {
-          "name": "Sourabh Bajaj",
-          "email": "sourabh@sourabhbajaj.com"
-      }
-    ]
+  "name": "mac-setup",
+  "version": "0.0.3",
+  "homepage": "https://www.sourabhbajaj.com/",
+  "description": "Installing Development environment on Mac OS X",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-gh-pages": "4.0.0",
+    "grunt-cli": "0.1.11",
+    "gitbook": "3.0.0",
+    "grunt-http-server": "2.1.0",
+    "gitbook-plugin": "0.0.2",
+    "gitbook-plugin-autocover": "2.0.0",
+    "@snyk/protect": "latest"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-gh-pages": "4.0.0",
+    "grunt-cli": "0.1.11",
+    "gitbook": "3.0.0",
+    "grunt-http-server": "2.1.0",
+    "gitbook-plugin": "0.0.2",
+    "gitbook-plugin-autocover": "2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "bin": {
+    "gitbook": "./bin/gitbook.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sb2nov/mac-setup.git"
+  },
+  "keywords": [
+    "OSx",
+    "Install",
+    "Mac",
+    "Git",
+    "Gitbook",
+    "Setup",
+    "Instruction"
+  ],
+  "author": "Sourabh Bajaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sb2nov/mac-setup/issues"
+  },
+  "contributors": [
+    {
+      "name": "Sourabh Bajaj",
+      "email": "sourabh@sourabhbajaj.com"
+    }
+  ],
+  "snyk": true
 }
